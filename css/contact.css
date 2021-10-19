@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(to bottom right, #04fcfc, #0ff80f);
+    height: max-content;
+}
+
+.main-header {
+    margin-top: 50px;
+}
+
+.main-header h1 {
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 700px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    animation: 2s slide-right forwards;
+    transform: translateX(0%);
+}
+
+@keyframes slide-right {
+    to {
+        transform: translateX(95%);
+    }
+}
+
+.header {
+    padding: 4px 4px;
+    display: flex;
+}
+
+.info {
+    width: 30%;
+    padding: 40px 20px;
+    text-align: center;
+    padding-bottom: 5px;
+    animation: 3s Fade-in forwards;
+    transform: translateX(0%);
+}
+
+@keyframes Fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header p {
+    font-size: 2rem;
+    margin-top: 2px;
+}
+
+.header h3 {
+    font-size: 1.5rem;
+}
+
+.header a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.form {
+    width: 500px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#message {
+    height: 200px;
+}
+
+.container p {
+    font-size: 1.25rem;
+    margin: 6px auto;
+}
+
+.box>button {
+    width: 95px;
+    height: 35px;
+}

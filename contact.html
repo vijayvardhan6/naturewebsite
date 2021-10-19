@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/7d972627e6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="css/contact.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="main-header">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="header">
+
+        <div class="info">
+            <i class="fa fa-map-marker fa-2x"></i>
+            <p>Address:</p>
+            <h3>198 West 21th Street, Suite 721 New York NY 10016</h3>
+        </div>
+
+        <div class="info">
+            <i class="fa fa-phone fa-2x"></i>
+            <p>Phone:</p>
+            <a href="tel://1234567890"> +123 4567 890</a>
+        </div>
+
+        <div class="info">
+            <i class="fa fa-paper-plane fa-2x"></i>
+            <p>Email:</p>
+            <a href="contact@info.com">contact@info.com</a>
+        </div>
+    </div>
+  
+
+    <form action="main.html">
+        <div class="container" >
+            <div class="box">
+                <h1>CONTACT FORM</h1>
+            </div>
+            <div class="box">
+                <p id="username"> User Name</p>
+                <div>
+                    <input type="username" class="form" name="username" id="" placeholder="Enter Your Name" required>
+                </div>
+            </div>
+            <div class="box">
+                <p>Email</p>
+                <div>
+                    <input type="email" class="form" name="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+            </div>
+            <div class="box">
+                <p>Password</p>
+                <div>
+                    <input type="password" class="form" name="" id="password" placeholder="Enter Your Password"
+                        required>
+                </div>
+            </div>
+            <div class="box">
+                <p>Message</p>
+                <div>
+                    <textarea name="" id="message" class="form" cols="50" rows="10" required></textarea>
+                </div><br>
+                <div class="box">
+                    <input type="checkbox" required>
+                    <label class="form-check-label" style="font-size: 1.25rem;">Check me out</label>
+                </div><br>
+                <div class="box">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+
+    $(window).scroll(function () {
+    $('.container').each(function (i) {
+
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight(),
+            bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if (bottom_of_window > bottom_of_element) {
+            $(this).animate({ 'opacity': '1' }, 1000);
+        }
+    });
+});
+
+</script>
+</html>
