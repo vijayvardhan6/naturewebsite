@@ -12,4 +12,4 @@ I'm Vijay Vardhan Reddy from Mechanical Branch NIT Kurukshetra.
 # Note
 Neither I had taken help of frameworks nor copied the code.
 
-<a href="https://vijayvardhan6.github.io/naturewebsite/">LINK OF MY PROJECT</a>
+<a href="https://github.com/vijayvardhan6/naturewebsite">LINK OF MY PROJECT</a>
